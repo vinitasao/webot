@@ -1,0 +1,56 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.5512516777118459 -0.5747979733352561 -0.6047552212834191 4.266801050132907
+  position -0.3433863786543291 -0.10501255434015594 4.858839903229837
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2.5 2.5
+}
+Solid {
+  translation 1.23236 0.00584746 0.009
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.05
+        height 0.1
+      }
+    }
+  ]
+}
+DEF epuck E-puck {
+  translation -1.13288 0.00331801 -1.77636e-15
+  name "epuck"
+  controller "bug2_controller"
+}
+WoodenBox {
+  translation -0.255769 -0.0126851 0.1
+  rotation 0 1 0 0
+  size 0.2 0.2 0.2
+}
+WoodenBox {
+  translation 0.765183 -0.00840315 0.1
+  name "wooden box(2)"
+  size 0.2 0.2 0.2
+}
+WoodenBox {
+  translation 0.308797 -0.0283251 0.1
+  rotation 0 1 0 0
+  name "wooden box(3)"
+  size 0.2 0.2 0.2
+}
+WoodenBox {
+  translation -0.750153 0.00911271 0.1
+  name "wooden box(1)"
+  size 0.2 0.2 0.2
+}
